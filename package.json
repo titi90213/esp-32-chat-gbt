@@ -1,0 +1,15 @@
+{
+  "name": "esp32-chatgpt",
+  "version": "1.0.0",
+  "description": "API ChatGPT pour ESP32",
+  "main": "index.js",
+  "dependencies": {
+    "openai": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
