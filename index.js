@@ -21,9 +21,9 @@ module.exports = async (req, res) => {
       const response = completion.data.choices[0].message.content;
       res.status(200).json({ response: response });
     } catch (error) {
-      res.status(500).json({ error: "Erreur lors de la connexion à l'API OpenAI" });
+      res.status(500).json({ error: "Error connecting to OpenAI API" });
     }
   } else {
-    res.status(404).send("Seule la méthode GET est prise en charge.");
+    res.status(404).send("Only GET method is supported.");
   }
 };
